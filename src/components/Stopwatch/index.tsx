@@ -36,7 +36,6 @@ export default function Stopwatch({ selected, finishTask }: Props) {
         <Clock time={time} />
       </div>
       <div className={style.clockbtn}>
-        <Button>Pausar</Button>
         <Button onClick={() => countdown(time)}>Começar</Button>
       </div>
       

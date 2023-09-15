@@ -4,6 +4,9 @@ import ListTask from "../components/List";
 import style from "./App.module.scss";
 import Stopwatch from "../components/Stopwatch";
 import { ITask } from "../types/task";
+import { Divider } from "antd";
+
+
 
 function App() {
   const [taskItem, setTaskItem] = useState<ITask[]>([]);
@@ -40,6 +43,7 @@ function App() {
   return (
     <div className={style.AppStyle}>
       <FormTask setTaskItem={setTaskItem} />
+      <Divider />
       <ListTask taskItem={taskItem} selectTask={selectTask} />
       <Stopwatch selected={selected} finishTask={finishTask} />
     </div>
