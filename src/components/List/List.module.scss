@@ -1,0 +1,32 @@
+.listTasks {
+  grid-area: tarefas;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: black;
+  }
+
+  ul {
+    max-height: 350px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+
+  @media screen and (min-width: 1280px) {
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 24px;
+    }
+
+    ul {
+      overflow: auto;
+      max-height: 500px;
+    }
+  }
+}
